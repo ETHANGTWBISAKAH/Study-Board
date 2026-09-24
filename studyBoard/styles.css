@@ -1,0 +1,137 @@
+/* --- SF PRO TEXT (Using Display Regular as a temporary substitute) --- */
+@font-face {
+    font-family: 'SF Pro Text Regular';
+    src: url('fonts/sf-pro-display_regular.woff2') format('woff2'); /* This file exists! */
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* --- SF PRO TEXT (Using your working Semibold file as the fallback) --- */
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('fonts/sf-pro-text_semibold.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('fonts/sf-pro-text_semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    height: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-family: 'SF Pro Text Regular';
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 1.0;
+    background-color: #FBFAF4;
+}
+
+nav ul img {
+    height: 40px;
+    width: auto;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Hero */
+
+.hero-page {
+    margin: 15px;
+    padding: 15px;
+}
+
+.hero-page h1 {
+    font-family: 'SF Pro Text';
+}
+.hero-page p {
+    font-family: 'SF Pro Text Regular';
+}
+
+.hero-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Boxes */
+
+.quick-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 15px;
+    padding: 15px;  
+}
+
+.box-dashboard {
+    margin: 15px;
+    padding: 15px;
+    background-color: #EFEEE9;
+    width: auto;
+    height: 140px;
+    border: 2px solid #E8E4DE;
+}   
+.box-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-family: 'SF Pro Text';
+}
+
+.box-dashboard-header img {
+    height: 40px;
+}
+
+.box-dashboard-text {
+    gap: 4px;
+    display: flex;
+    align-items: baseline;
+    font-family: 'SF Pro Text Regular';
+    font-weight: 100;
+
+}
+
+.box-dashboard-value {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'SF Pro Text';
+    
+}
+
+.box-dashboard-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seperating-line {
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #ECE9E5;
+}
