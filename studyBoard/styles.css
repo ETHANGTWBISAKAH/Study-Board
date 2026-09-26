@@ -30,13 +30,13 @@
 
 :root {
     --secondary-color: #EFEEE9;
-    --light-secondary-color: $F5F4EF;
+    --light-secondary-color: #F5F4EF;
     --paragraph-font: 'SF Pro Text Regular';
     --header-font: 'SF Pro Text';
     --border: 2px solid #E8E4DE;
     --font-gray-color: #575D52;
     --button-brown-color: #7E5039;
-
+    --light-gray-color: #E4E2DE;
 }
 header {
     height: 150px;
@@ -154,35 +154,26 @@ nav ul {
     display: flex;
     flex-direction: column;
 }
-.progress-bar {
-    margin: 10px;
-    height: 20px;
-    background-color: blue;
-    border-radius: 10px;
-    display:flex;
-    overflow: hidden;
-    
 
-}
-
-.progress-part {
-    background-color: aquamarine;
-    height: 100%;
-    width: 100px;
-}
-
-.progress-remainder {
-    background-color: blue;
-    height: 100%;
-    width: 100px;
-}
 .assignment-header {
     display: flex;
     justify-content: space-between;
 }
 
+.slider li.active {
+    background-color: var(--button-brown-color);
+    color: white;
+    border-radius: 4px;
+}
 
+.slider li {
+    cursor: pointer;
+}
 
+.completed-row {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
 .active-assignments {
     border: var(--border);
     margin: 15px;
@@ -190,6 +181,9 @@ nav ul {
     background-color: var(--secondary-color);
 }
 
+.active-assignments .right {
+    font-family: var(--header-font);
+}
 .active-assignments ul {
     display: flex;
     list-style: none;
@@ -250,11 +244,86 @@ nav ul {
 
 .tag {
     padding: 10px;
-    background-color: #E4E2DE;
+    background-color: var(--light-gray-color);
 }
 
 .title-sub {
     font-style: italic;
     color: var(--font-gray-color);
     font-size: 13px;
+}
+
+.starsandbars {
+    display: flex;
+    flex-direction: column;
+
+    border: var(--border);
+    margin: 15px;
+    padding: 15px;
+    background-color: var(--secondary-color);
+}
+
+.header-bar, .bottom-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-row {
+    padding: 15px;
+    font-family: var(--paragraph-font);
+}
+
+#current-standing {
+    font-style: italic;
+    color: var(--font-gray-color);
+}
+.top-row {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.top-row h3{
+    font-family: var(--header-font);
+    background-color:  var(--light-gray-color);
+    padding: 10px;
+}   
+
+.top-row h2 {
+    font-family: var(--header-font);
+    
+}   
+
+.top-row p {
+    font-family: var(--paragraph-font);
+}
+
+.top-row h4 {
+    font-family: var(--header-font);
+    color: var(--button-brown-color);
+}
+
+.progress-line {
+    margin: 15px;
+    background-color: var(--light-gray-color);
+    height: 10px;
+    border-radius: 15px;
+}
+
+.progress-part {
+    height: 100%;
+    background-color: var(--button-brown-color);
+    border-radius: 15px;
+}
+
+.bar-row {
+    margin: 10px;
+    border-bottom: var(--border);
+}
+
+.header-bar {
+    padding: 10px;
+    border-bottom: var(--border);
 }
