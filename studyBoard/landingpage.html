@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="landingpage.css">
+    </head>
+    <body>
+        <header>
+            <div class="container"> 
+                <img src="images/1.png" alt="" id="one">
+                <img src="images/2.png" alt="" id="two">
+                <img src="images/3.png" alt="" id="three">
+                <img src="images/4.png" alt="" id="four">
+                <img src="images/5.png" alt="" id="five">
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h2> AsdASdasda</h2>
+                <h1> asdadasdas</h1>
+                <div>
+                    <div>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, provident iste non voluptatibus dolore dicta incidunt unde quas quae in?</p>
+                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt odio quasi in omnis odit obcaecati cum dicta repellendus ea similique.</p>
+                    </div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta obcaecati qui tempore animi ipsum vitae ab porro rerum eum repudiandae impedit id modi, quis quisquam esse sint illo aperiam consectetur quae ut ducimus sit architecto. Repellat, tempora quidem quis placeat cumque incidunt voluptatibus obcaecati atque, quas sed nisi aut esse earum dolorum? Neque harum excepturi at. Laborum facere accusantium ipsa modi labore nulla et quia? Enim fuga consectetur repudiandae expedita, ipsam sequi? Nam necessitatibus atque non nobis quisquam repellat?
+                </div>
+            </section>
+            
+        </main>
+    </body>
+    <script>
+        const one = document.getElementById("one");
+        const two = document.getElementById("two");
+        const three = document.getElementById("three");
+        const four = document.getElementById("four");
+        const five = document.getElementById("five");
+
+        document.addEventListener("scroll", ()=> {
+            let value = window.scrollY;
+
+            two.style.right = -value * 0.8 + "px";
+            three.style.bottom = -value * 0.4 + "px";
+            four.style.bottom = -value * 0.6 + "px";
+        })
+    </script>
+</html>
